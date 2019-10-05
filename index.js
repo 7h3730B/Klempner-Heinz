@@ -8,21 +8,21 @@ const OWNER = '274610195500367874';
 const ROLES = [
     {
         name: "Heinz",
-        color: #948d8d,
+        color: "#948d8d",
         permissions: 8,
         hoist: true,
         mentionable: false,
     },
     {
         name: "Admin",
-        color: #0006ea,
+        color: "#0006ea",
         permissions: 8,
         hoist: true,
         mentionable: true,
     },
     {
         name: "Discord-Moderator",
-        color: #29cc00,
+        color: "#29cc00",
         permissions: 267770945,
         hoist: true,
         mentionable: true,
