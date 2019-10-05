@@ -9,3 +9,5 @@ package-lock.json
 # Optional npm cache directory
 .npm
 
+# Config (Token is there)
+config.json
