@@ -90,7 +90,6 @@ const CATEGORIES = [
         name: "🤖 BOT-FUN 🤖",
         type: "voice",
         channels: [
-            "bot-commands",
             "🎶🎵 Musik 🎶🎵"
         ],
     },
@@ -126,6 +125,9 @@ client.on("message", (message) => {
                         }).catch(console.log);
                     });
                 }).catch(console.log);
+                guild.createChannel("bot-commands", "text").then((chan) => {
+                    chan.setParent("🤖 BOT-FUN 🤖").catch(console.log);
+                })
             });
             return;
         } else return;
