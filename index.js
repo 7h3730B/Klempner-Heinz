@@ -110,7 +110,7 @@ client.on("message", (message) => {
         if ( message.content == "setup-1" ) {
             console.log("Lösche alle Kanäle und Rollen.");
             guild.channels.filter((chan) => chan.id != CHANNEL)
-                .forEach((chan) => console.delete()
+                .forEach((chan) => chan.delete()
                 .catch(console.log));
             guild.roles.forEach((r) => r.delete()
                 .catch(console.log));
